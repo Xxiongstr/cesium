@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        #mapLeft {
+            width: 50%;
+            height: 100vh;
+        }
+        #mapRight {
+            width: 50%;
+            height: 100vh;
+        }
+    </style>
+    <script src="./Cesium/Cesium.js"></script>
+    <link rel="stylesheet" href="./Cesium/Widgets/widgets.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mapLeft"></div>
+        <div id="mapRight"></div>
+    </div>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+<script src="./双屏对比.js" type="module"></script>
