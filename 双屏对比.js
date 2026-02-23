@@ -9,11 +9,11 @@ let isSyncing = false;
 for (let item of cesiumContainer) {
     // 在创建 Viewer 之前配置
     const viewer = new Cesium.Viewer(item, {
-        terrainProvider: new Cesium.CesiumTerrainProvider({
-            url: 'http://data.marsgis.cn/terrain/',
-            requestWaterMask: true,
-            requestVertexNormals: true,
-        }),
+        // terrainProvider: new Cesium.CesiumTerrainProvider({
+        //     url: 'http://data.marsgis.cn/terrain/',
+        //     requestWaterMask: true,
+        //     requestVertexNormals: true,
+        // }),
     });
 
     viewer.imageryLayers.addImageryProvider(
@@ -130,4 +130,3 @@ function setupCameraSync(mapLeft, mapRight) {
 
     console.log('双屏实时同步已启用（使用 postRender 事件）');
 }
-

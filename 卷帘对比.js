@@ -2,11 +2,11 @@
 Cesium.Ion.defaultAccessToken = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhMDQyMTAzZi1iZDcxLTQ3OWUtYmFjNS1jYzk2MTRkZmIwZjUiLCJpZCI6MjkyMjgwLCJpYXQiOjE3NDQxNzk0NDB9.jtkVaDPrleaNxbbfsdKh8lenB8dFZ01vlECHsDv_lp4`;
 // 在创建 Viewer 之前配置
 const viewer = new Cesium.Viewer('cesiumContainer', {
-    terrainProvider: new Cesium.CesiumTerrainProvider({
-        url: 'http://data.marsgis.cn/terrain/',
-        requestWaterMask: true,
-        requestVertexNormals: true,
-    }),
+    // terrainProvider: new Cesium.CesiumTerrainProvider({
+    //     url: 'http://data.marsgis.cn/terrain/',
+    //     requestWaterMask: true,
+    //     requestVertexNormals: true,
+    // }),
 });
 
 // viewer.imageryLayers.addImageryProvider(
