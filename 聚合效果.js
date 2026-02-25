@@ -53,7 +53,7 @@ viewer.dataSources.add(dataSource);
 viewer.flyTo(dataSource);
 
 dataSource.clustering.enabled = true;
-dataSource.clustering.pixelRange = 30; // 聚合像素范围，默认25
+dataSource.clustering.pixelRange = 10; // 聚合像素范围，默认25
 dataSource.clustering.minimumClusterSize = 3; // 最小聚合数量，默认2
 
 const pinImg = new Cesium.PinBuilder();
